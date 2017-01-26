@@ -1,3 +1,5 @@
+import moment from 'moment'
+
 const isDebug = process.env.NODE_ENV === 'debug'
 
 console.log('Get to coding!')
@@ -10,3 +12,5 @@ export function titleCase (str) {
   }
   return splitStr.join(' ')
 }
+
+export const toDate = (timestamp) => moment(timestamp).format('MMMM DD, YYYY')
