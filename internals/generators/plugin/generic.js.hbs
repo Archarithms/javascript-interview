@@ -1,0 +1,18 @@
+/**
+*
+* {{ camelCase name }} - {{ type }}
+*
+*/
+
+function {{ camelCase name }} ({ alfred }) {
+  alfred.register({
+    name: '{{ camelCase name }}',
+    commands: {
+      '{{ camelCase name }}': function () {
+        alfred.speak('{{ camelCase name }} is registered!')
+      }
+    }
+  })
+}
+
+export default {{ camelCase name }}

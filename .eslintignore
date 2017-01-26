@@ -1,0 +1,6 @@
+# Ignore built files
+build/*
+lib/*
+bundles/*
+coverage/*
+.nyc_output/*

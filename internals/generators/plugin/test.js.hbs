@@ -1,0 +1,16 @@
+import test from 'ava'
+import { spy } from 'sinon'
+import {{ camelCase name }} from './index'
+
+let alfred
+
+test.beforeEach(() => {
+  alfred = {
+    register: spy()
+  }
+})
+
+test('registers with alfred', t => {
+  {{ camelCase name }}({ alfred })
+  t.true(alfred.register.calledOnce)
+})

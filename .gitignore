@@ -1,0 +1,7 @@
+*.log
+/build
+/lib
+/bundles
+/node_modules
+/coverage
+/.nyc_output
