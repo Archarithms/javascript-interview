@@ -1,5 +1,6 @@
 import test from 'ava'
+import { makeTitleCase } from './index'
 
 test('runs tests', t => {
-  t.pass()
+  t.is(makeTitleCase('SOMETHING_ELSE'), 'Something Else')
 })
