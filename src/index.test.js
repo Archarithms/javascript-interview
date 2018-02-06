@@ -12,7 +12,3 @@ test('title case test', t => {
 test('date test', t => {
   t.is(toDate(1485470818000), 'January 26, 2017')
 })
-
-test('date test', t => {
-  t.is(toDate(), 'January 26, 2017')
-})
