@@ -1,8 +1,3 @@
-<p align="center"><img src="https://github.com/kanzelmeyer-software/beards-js/blob/master/beards-js.png" width="300px"></p>
-<p>&nbsp;</p>
-
-# beards-js
-
 This boilerplate is boiled down to the bare essentials. You will need to pick your
 own web server, state management, etc.
 
