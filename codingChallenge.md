@@ -10,12 +10,6 @@ For example:
 `"CASE-THREE_extra[chars]///"` should return `"Case Three Extra Chars"`
 
 
-Step 1 - Create a feature branch
-Step 2 - Write the function in `src/index.js`
-Step 3 - Run unit tests with `yarn test` or `npm run test`
-Step 4 - Submit a pull request
-
-
 ## Challenge 2
 Create a function that takes in a timestamp and returns a String 
 that is the input timestamp formatted as the the month, the day,
@@ -25,9 +19,4 @@ thrown.
 
 For example, passing a unix epoch time `1499144400` in seconds
 would return `"July 4, 2017"`. 
-
-Step 1 - Create a feature branch
-Step 2 - Write the function in `src/index.js`
-Step 3 - Run unit tests with `yarn test` or `npm run test`
-Step 4 - Submit a pull request
 
