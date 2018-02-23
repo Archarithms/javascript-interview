@@ -3,8 +3,32 @@
   "parserOptions": {
     "ecmaVersion": 2017
   },
-  "extends": "standard",
+  "extends" : [
+    "standard",
+    "eslint:recommended"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "Action"       : false,
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__DEBUG_NEW_WINDOW__" : false,
+    "__API_URL__" : false,
+    "__BASENAME__" : false,
+    "FileNavigator" : true
+  },
   "rules": {
-    // Additional, per-project rules...
+    "semi" : [2, "always"],
+    "space-infix-ops": 0,
+    "max-len": [2, 120, 2],
+    "indent": ["error", 2],
+    "no-unused-vars": 1,
+    "no-console": 0,
+    "no-debugger": 1,
+    "no-use-before-define": ["error", { "functions": false, "classes": true }],
+    "no-trailing-spaces": 1
   }
 }
