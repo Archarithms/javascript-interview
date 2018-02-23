@@ -1,4 +1,8 @@
-const isDebug = process.env.NODE_ENV === 'debug'
 
-console.log('Get to coding!')
-console.log(`Debug mode: ${isDebug ? 'on' : 'off'}`)
+export function sentenceCase (str) {
+  // CODE HERE
+}
+
+export function toDateString (timestamp) {
+  // CODE HERE
+}
