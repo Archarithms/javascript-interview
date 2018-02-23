@@ -25,4 +25,3 @@ test('null', t => {
     titleCase(actual);
   }, Error);
 });
-
