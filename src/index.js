@@ -6,6 +6,7 @@
  */
 export function titleCase (str) {
   // CODE HERE
+  return null;
 }
 
 /**
@@ -15,5 +16,6 @@ export function titleCase (str) {
  */
 export function toDateString (timestamp) {
   // CODE HERE
+  return null;
 }
 

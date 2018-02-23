@@ -1,7 +1,7 @@
 import test from 'ava';
 import { titleCase } from './index';
 
-if (titleCase()) {
+if (titleCase('t') != null) {
   test('Nominal', t => {
     const actual = 'CASE_ONE';
     const expected = 'Case One';
@@ -31,5 +31,3 @@ if (titleCase()) {
     t.pass();
   });
 }
-
-
