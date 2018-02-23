@@ -7,3 +7,10 @@ test('Nominal', t => {
   t.is(toDateString(actual), expected, 'Values should be equal');
 });
 
+test('null', t => {
+  const actual = null;
+  t.throws(() => {
+    toDateString(actual);
+  }, Error);
+});
+

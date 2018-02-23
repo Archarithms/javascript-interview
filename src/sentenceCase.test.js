@@ -19,9 +19,10 @@ test('With other chars', t => {
   t.is(titleCase(actual), expected);
 });
 
-test('With null', t => {
+test('null', t => {
   const actual = null;
-  const expected = null;
-  t.is(titleCase(actual), expected);
+  t.throws(() => {
+    titleCase(actual);
+  }, Error);
 });
 
