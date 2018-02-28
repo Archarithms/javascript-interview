@@ -1,7 +1,7 @@
 # Archarithm's Coding Challenge
 
 ## Getting started
-Clone the project and install with `yarn` or `npm install`
+Fork the project and install with `yarn` or `npm install`
 The coding challenge instructions are found in `codingChallenge.md`
 
 Choose one of the challenges, and follow the instructions below to submit
