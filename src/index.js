@@ -5,8 +5,23 @@
  * @see `codingChallenge.md` for instructions
  */
 export function titleCase (str) {
-  // CODE HERE
-  return null;
+  if ((str === null) || (str === '')) {
+    throw new Error("Value is null!");
+
+  }
+
+  else
+    str = str.toString();
+  var nStr = str.replace(/[\W_]+/g, " ");
+  var chpStr = nStr.toLowerCase().split(' ');
+  for (var i = 0; i < chpStr.length; i++) {
+
+    chpStr[i] = chpStr[i].charAt(0).toUpperCase() + chpStr[i].substring(1);
+  }
+  var Lstr = chpStr.join(' ');
+  Lstr = Lstr.trim();
+  return (Lstr);
+
 }
 
 /**
