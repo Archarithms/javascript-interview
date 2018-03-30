@@ -30,15 +30,15 @@
     "build:dev": "rimraf build && webpack --config internals/webpack/webpack.config.dev.js",
     "build:prod": "rimraf lib && NODE_ENV=production webpack -p --config internals/webpack/webpack.config.js",
     "compile": "node ./internals/scripts/compile.js",
-    "start": "yarn build:dev && node build/index.js",
-    "debug": "NODE_ENV=debug yarn start",
+    "start": "npm run build:dev && node build/index.js",
+    "debug": "NODE_ENV=debug npm run start",
     "coverage": "nyc ava",
     "coverage:report": "npm run coverage && nyc report --reporter=html && open coverage/index.html",
     "test": "ava --verbose",
     "test:watch": "ava --watch",
     "generate": "plop --plopfile internals/generators/index.js",
     "lint": "eslint src/",
-    "validate": "yarn list"
+    "validate": "npm list"
   },
   "devDependencies": {
     "ava": "^0.17.0",
