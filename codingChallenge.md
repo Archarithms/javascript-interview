@@ -1,4 +1,4 @@
-# Archarithm's Coding Challenge - 1 & 2
+# Archarithms Inc. Coding Challenge - 1 & 2
 
 ## Challenge 1
 Create a function that takes in a constant-formatted (all caps,

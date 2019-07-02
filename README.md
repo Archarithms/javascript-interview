@@ -1,4 +1,4 @@
-# Archarithm's Coding Challenge
+# Archarithms Inc. Coding Challenge
 
 ## Software Requirements
 NodeJS - https://nodejs.org/en/
