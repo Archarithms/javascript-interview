@@ -1,11 +1,11 @@
 {
   "private": true,
-  "version": "0.0.0-development",
-  "name": "beards-js",
-  "description": "Modern node boilerplate",
-  "author": "Kanzelmeyer Software Company <kanzelm3@gmail.com> (http://kanzelmeyer.co)",
+  "version": "0.0.1",
+  "name": "javascript-interview",
+  "description": "A JavaScript interview project",
+  "author": "Archarithms, Inc.",
   "homepage": "https://github.com/kanzelmeyer-software/beards-js",
-  "repository": "git@github.com:kanzelmeyer-software/beards-js.git",
+  "repository": "git@github.com:Archarithms/javascript-interview.git",
   "license": "MIT",
   "main": "build/index.js",
   "engines": {
@@ -16,7 +16,7 @@
     "bundles"
   ],
   "bugs": {
-    "url": "https://github.com/kanzelmeyer-software/beards-js/issues"
+    "url": "https://github.com/Archarithms/javascript-interview/issues"
   },
   "ava": {
     "require": [

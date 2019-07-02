@@ -6,7 +6,7 @@
  */
 export function titleCase (str) {
   // CODE HERE
-  return null;
+  return false;
 }
 
 /**
@@ -14,8 +14,8 @@ export function titleCase (str) {
  * @param {Number} timestamp the timestamp to format
  * @see `codingChallenge.md` for instructions
  */
-export function toDateString (timestamp) {
+export function dateString (timestamp) {
   // CODE HERE
-  return null;
+  return false;
 }
 
