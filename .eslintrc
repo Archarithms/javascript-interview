@@ -8,7 +8,7 @@
     "eslint:recommended"
   ],
   "env"     : {
-    "browser" : true
+    "browser" : false
   },
   "globals" : {
     "Action"       : false,
