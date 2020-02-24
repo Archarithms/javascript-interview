@@ -38,7 +38,7 @@
     "test:watch": "ava --watch",
     "generate": "plop --plopfile internals/generators/index.js",
     "lint": "eslint src/",
-    "validate": "npm run list"
+    "validate": "npm list"
   },
   "devDependencies": {
     "ava": "^0.17.0",
