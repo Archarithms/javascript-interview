@@ -3,14 +3,10 @@
 ## Software Requirements
 NodeJS - https://nodejs.org/en/
 
-Yarn - https://yarnpkg.com/en/  or  npm - https://www.npmjs.com/
-
-Ava - https://github.com/avajs/ava
-
 ## Getting started
-Clone the project and compile with: `yarn` or `npm install`.
+Clone the project and compile with: `npm install`.
 
-Run unit tests with: `yarn test` or `npm run test`.
+Run unit tests with: `npm run test`.
 
 Refer to the coding challenge instructions found in `codingChallenge.md`
 
@@ -29,6 +25,6 @@ Complete both of the challenges listed in `codingChallenge.md` and follow the in
 
 2. Write the function in `src/index.js`
 
-3. Ensure all unit tests run successfully with: `yarn test` or `npm run test`
+3. Ensure all unit tests run successfully with: `npm run test`
 
 4. Push your feature branch and submit a pull request
