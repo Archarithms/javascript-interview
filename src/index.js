@@ -1,3 +1,4 @@
+import moment from 'moment';
 
 /**
  * CODING CHALLENGE 1
@@ -5,9 +6,13 @@
  * @see `codingChallenge.md` for instructions
  */
 export function titleCase (str) {
-  // Error out if null state (check undefined too?)
-  if (str == null || str == undefined) {
-    throw new Error("Title string is null or undefined")
+  // Error out if null state
+  // How to treat undefined wasn't specified for this function
+  //     Handle it just in case.
+  if (str === undefined) {
+    return ""
+  } else if (str === null) {
+    throw new Error("Title string is null or undefined");
   }
 
   // Strip trailing white space (and future trailing white space)
@@ -34,7 +39,12 @@ export function titleCase (str) {
  * @see `codingChallenge.md` for instructions
  */
 export function dateString (timestamp) {
-  // CODE HERE
-  return false;
+  if (timestamp === undefined) {
+    return new moment().format('MMMM DD, YYYY');
+  } else if (timestamp === null) {
+    throw new Error("Timestamp was null");
+  }
+
+  return new moment(timestamp).format('MMMM DD, YYYY');
 }
 
