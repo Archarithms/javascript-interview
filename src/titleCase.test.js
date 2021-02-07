@@ -20,6 +20,12 @@ if (titleCase('t') != null) {
     t.is(titleCase(actual), expected);
   });
 
+  test('With single slashes', t => {
+    const actual = 'CASE/FOUR_extra/SLAsh';
+    const expected = 'Case Four Extra Slash';
+    t.is(titleCase(actual), expected);
+  });
+
   test('null', t => {
     const actual = null;
     t.throws(() => {

@@ -20,6 +20,13 @@ if (dateString()) {
       dateString(actual);
     }, Error);
   });
+
+  test("I'm not a number", t => {
+    const actual = "I'm not a number";
+    t.throws(() => {
+      dateString(actual);
+    }, Error);
+  });
 } else {
   test('function not defined - ignoring', t => {
     t.pass();
