@@ -1,9 +1,5 @@
-/**
- * CODING CHALLENGE 1
- * @param {String} str the string to format
- * @see `codingChallenge.md` for instructions
- */
-export function titleCase(str) {
+// function to filter out alphanumeric characters and return a new string
+function titleCaseChange(str) {
   if (str === null) {
     throw new Error("Exception message");
   } else {
@@ -52,25 +48,4 @@ export function titleCase(str) {
   return newString;
 }
 
-/**
- * CODING CHALLENGE 2
- * @param {Number} timestamp the timestamp to format
- * @see `codingChallenge.md` for instructions
- */
-export function dateString(timestamp) {
-  var returnedDate = "";
-  // if timestamp is null, throw error
-  try {
-    // if timestamp left blank on input, use today's date
-    if (timestamp === " ") {
-      returnedDate = new Date.now();
-    } else {
-      // using moment to convert timestamp to desired date format
-      return (returnedDate = new moment(timestamp).format("LL"));
-    }
-    // using moment to convert timestamp to desired date format
-    return (returnedDate = new moment(timestamp).format("LL"));
-  } catch (error) {
-    console.error(error);
-  }
-}
+titleCaseChange(".tHIS;WORD[[");
