@@ -20,6 +20,12 @@ if (titleCase('t') != null) {
     t.is(titleCase(actual), expected);
   });
 
+  test('With chars at beginning and end', t => {
+    const actual = '#&!{CASE-FOUR_extra[chars-at+BEGINNINg?And_end$()@';
+    const expected = '    Case Four Extra Chars At Beginning And End';
+    t.is(titleCase(actual), expected);
+  });
+
   test('null', t => {
     const actual = null;
     t.throws(() => {
