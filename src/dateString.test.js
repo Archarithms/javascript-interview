@@ -4,8 +4,14 @@ import { dateString } from './index';
 
 if (dateString()) {
   test('Nominal', t => {
-    const actual = 1485470818000;
+    const actual = 1485470818;
     const expected = 'January 26, 2017';
+    t.is(dateString(actual), expected, 'Values should be equal');
+  });
+  
+  test('Example', t => {
+    const actual = 1499126400;
+    const expected = 'July 4, 2017';
     t.is(dateString(actual), expected, 'Values should be equal');
   });
 
