@@ -2,7 +2,7 @@ import test from 'ava';
 import moment from 'moment';
 import { dateString } from './index';
 
-if (dateString()) {
+if (dateString('d') != null) {
   test('Nominal', t => {
     const actual = 1485470818000;
     const expected = 'January 26, 2017';
