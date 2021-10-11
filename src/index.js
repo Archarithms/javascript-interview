@@ -1,3 +1,4 @@
+import moment from "moment";
 /**
  * CODING CHALLENGE 1
  * @param {String} str the string to format
@@ -5,8 +6,8 @@
  */
 export function titleCase(str) {
   // CODE HERE
-  // try {
-    // if (str != null) {
+  try {
+    if (str != null) {
       const strReplace = str.replace(/[^a-zA-Z0-9]+/g, " ");
       const lowCase = strReplace.toLowerCase().trim();
       const splitWords = lowCase.split(" ");
@@ -17,13 +18,10 @@ export function titleCase(str) {
       }
 
       return splitWords.join(" ");
-  //   }
-  // } catch (error) {
-    // throw new Error("Null Input");
-    // error = new Error("Null Input")
-    // console.log(error + " ERROR")
-    // return new Error("Null Input")
-  // }
+    }
+  } catch (error) {
+    throw new Error("Null Input");
+  }
 }
 
 /**
@@ -33,5 +31,18 @@ export function titleCase(str) {
  */
 export function dateString(timestamp) {
   // CODE HERE
-  return false;
+
+  try {
+    if (!timestamp && !null) {
+      const today = new moment().format("MMMM D, YYYY");
+      return today;
+    } else if (timestamp != null) {
+      const toDate = new Date(timestamp);
+      let formattedDate = moment(toDate).format("MMMM D, YYYY");
+
+      return formattedDate;
+    }
+  } catch (error) {
+    throw new Error("Null Input");
+  }
 }
