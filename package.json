@@ -27,7 +27,7 @@
     "validate": "npm list"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
+    "ava": "^5.1.0",
     "babel-cli": "*",
     "babel-core": "^6.21.0",
     "babel-eslint": "6",
